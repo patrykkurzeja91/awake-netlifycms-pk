@@ -15,6 +15,9 @@
       <template v-slot:default>
         <div class="post-wrapper">
           <markdown :markdown="$store.state.content" />
+          <span v-if="file" class="file-wrapper">
+            <strong>File:</strong> {{ file }}
+          </span>
           <div class="other-posts">
             <h6 class="subtitle is-size-4">
               Related Posts
@@ -50,7 +53,8 @@ export default {
       'underSubtitle',
       'author',
       'category',
-      'slug'
+      'slug',
+      'file'
     ]),
     date() {
       return getFormattedDate(this.$store.state.date)

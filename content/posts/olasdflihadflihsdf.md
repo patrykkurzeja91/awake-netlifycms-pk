@@ -1,6 +1,6 @@
 ---
-title: olasdflihadflihsdf
-subtitle: aldifhlihasefl;ihadsflihsdf
+title: jakis kotek
+subtitle: slodki szary kotek
 category:
   - About Awake
 author: PK
